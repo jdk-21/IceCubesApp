@@ -62,6 +62,7 @@ public struct AccountsListView: View {
     List {
       listContent
     }
+    .lookToScroll()
     .searchable(
       text: $viewModel.searchQuery,
       placement: .navigationBarDrawer(displayMode: .always)
@@ -84,6 +85,7 @@ public struct AccountsListView: View {
     List {
       listContent
     }
+    .lookToScroll()
   }
 
   @ViewBuilder

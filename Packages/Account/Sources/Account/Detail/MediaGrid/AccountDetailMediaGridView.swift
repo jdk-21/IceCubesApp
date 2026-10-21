@@ -101,6 +101,7 @@ public struct AccountDetailMediaGridView: View {
         }
       }
     }
+    .lookToScroll()
     .navigationBarTitleDisplayMode(.inline)
     .toolbar {
       ToolbarItem(placement: .principal) {

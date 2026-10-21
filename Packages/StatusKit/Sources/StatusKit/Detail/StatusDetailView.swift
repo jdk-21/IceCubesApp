@@ -68,6 +68,7 @@ public struct StatusDetailView: View {
             errorView
           }
         }
+        .lookToScroll()
         .environment(\.defaultMinListRowHeight, 1)
         .listStyle(.plain)
         #if !os(visionOS)

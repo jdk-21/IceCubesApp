@@ -47,6 +47,7 @@ public struct AccountStatusesListView: View {
       StatusesListView(fetcher: fetcher, client: client, routerPath: routerPath)
         .listSectionSeparator(.hidden, edges: .top)
     }
+    .lookToScroll()
     .listStyle(.plain)
     #if !os(visionOS)
       .scrollContentBackground(.hidden)

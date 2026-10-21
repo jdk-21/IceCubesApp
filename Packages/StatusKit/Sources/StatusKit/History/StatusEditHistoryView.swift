@@ -1,4 +1,5 @@
 import DesignSystem
+import Env
 import Models
 import NetworkClient
 import SwiftUI
@@ -45,6 +46,7 @@ public struct StatusEditHistoryView: View {
           }
         }.listRowBackground(theme.primaryBackgroundColor)
       }
+      .lookToScroll()
       .toolbar {
         ToolbarItem(placement: .navigationBarTrailing) {
           Button("action.done", action: { dismiss() })

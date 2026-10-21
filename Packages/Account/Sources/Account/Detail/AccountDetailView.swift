@@ -88,6 +88,7 @@ public struct AccountDetailView: View {
           EmptyView()
         }
       }
+      .lookToScroll()
       .environment(\.defaultMinListRowHeight, 0)
       .listStyle(.plain)
       #if !os(visionOS)

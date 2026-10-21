@@ -51,6 +51,7 @@ public struct NotificationsRequestsListView: View {
         requestsSection(data: data)
       }
     }
+    .lookToScroll()
     .listStyle(.plain)
     #if !os(visionOS)
       .scrollContentBackground(.hidden)

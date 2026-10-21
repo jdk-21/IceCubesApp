@@ -1,4 +1,5 @@
 import DesignSystem
+import Env
 import Models
 import SwiftUI
 
@@ -21,6 +22,7 @@ public struct TagsListView: View {
           .padding(.vertical, 4)
       }
     }
+    .lookToScroll()
     #if !os(visionOS)
       .scrollContentBackground(.hidden)
       .background(theme.primaryBackgroundColor)

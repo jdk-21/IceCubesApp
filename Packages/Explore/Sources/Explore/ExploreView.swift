@@ -107,6 +107,7 @@ public struct ExploreView: View {
           }
         }
       }
+      .lookToScroll()
       .environment(\.defaultMinListRowHeight, .scrollToViewHeight)
       .task {
         await fetchTrending()

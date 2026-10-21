@@ -52,6 +52,7 @@ struct TimelineListView: View {
             .environment(\.isHomeTimeline, timeline == .home)
         }
       }
+      .lookToScroll()
       .id(client.id)
       .environment(\.defaultMinListRowHeight, 1)
       .listStyle(.plain)

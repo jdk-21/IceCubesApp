@@ -42,6 +42,7 @@ public struct NotificationsListView: View {
       notificationsView
         .listSectionSeparator(.hidden, edges: .top)
     }
+    .lookToScroll()
     .id(account.account?.id)
     .environment(\.defaultMinListRowHeight, 1)
     .listStyle(.plain)

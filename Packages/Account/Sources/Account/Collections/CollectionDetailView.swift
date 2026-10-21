@@ -1,4 +1,5 @@
 import DesignSystem
+import Env
 import Models
 import NetworkClient
 import SwiftUI
@@ -29,6 +30,7 @@ public struct CollectionDetailView: View {
         accountsSection
       }
     }
+    .lookToScroll()
     .listStyle(.plain)
     #if !os(visionOS)
       .scrollContentBackground(.hidden)

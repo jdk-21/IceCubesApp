@@ -17,6 +17,7 @@ public struct FollowedTagsListView: View {
         #endif
         .padding(.vertical, 4)
     }
+    .lookToScroll()
     .task {
       await currentAccount.fetchFollowedTags()
     }

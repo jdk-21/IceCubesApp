@@ -28,6 +28,7 @@ public struct ListsListView: View {
         }
       }
     }
+    .lookToScroll()
     .task {
       await currentAccount.fetchLists()
     }

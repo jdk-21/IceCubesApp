@@ -43,6 +43,7 @@ public struct ConversationDetailView: View {
         }
         .padding(.horizontal, .layoutPadding)
       }
+      .lookToScroll()
       #if !os(visionOS)
         .scrollDismissesKeyboard(.interactively)
       #endif

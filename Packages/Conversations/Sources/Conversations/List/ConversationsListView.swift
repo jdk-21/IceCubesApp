@@ -21,6 +21,7 @@ public struct ConversationsListView: View {
     List {
       conversationsView
     }
+    .lookToScroll()
     .listStyle(.plain)
     #if !os(visionOS)
       .scrollContentBackground(.hidden)

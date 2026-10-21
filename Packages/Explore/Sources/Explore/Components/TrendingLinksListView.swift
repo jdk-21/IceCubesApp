@@ -1,4 +1,5 @@
 import DesignSystem
+import Env
 import Models
 import NetworkClient
 import StatusKit
@@ -34,6 +35,7 @@ public struct TrendingLinksListView: View {
         .listRowBackground(theme.primaryBackgroundColor)
       #endif
     }
+    .lookToScroll()
     #if os(visionOS)
       .listStyle(.insetGrouped)
     #else
